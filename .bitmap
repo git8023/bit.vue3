@@ -9,9 +9,15 @@
  */
 
 {
+    "_style": {
+        "scope": "git8023.toolkit",
+        "version": "0.0.1",
+        "mainFile": "index.scss",
+        "rootDir": "src/_bit/_style"
+    },
     "context-menu": {
         "scope": "git8023.vue3",
-        "version": "0.0.2",
+        "version": "0.0.5",
         "mainFile": "ContextMenu.vue",
         "rootDir": "src/components/context-menu"
     },

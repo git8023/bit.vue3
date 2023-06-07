@@ -27,12 +27,7 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import { Prop, Watch } from 'vue-property-decorator';
-import { Arrays } from '@git8023/toolkit.array';
-import { Builders } from '@git8023/toolkit.build';
-import { Functions } from '@git8023/toolkit.funcs';
-import { Promises } from '@git8023/toolkit.promise';
-import { Validation } from '@git8023/toolkit.validation';
-import { scopedEventKeydown } from '@git8023/vue3.decorators';
+import { Arrays, Builders, Functions, Promises, Validation, scopedEventKeydown } from './importer';
 import * as vms from './types';
 
 @Options({
@@ -150,6 +145,7 @@ export default class ContextMenu extends Vue {
 </script>
 
 <style scoped lang="scss">
+.flex-row-center{display:flex; align-items:center;}
 .context-menu-root{z-index:5000;
   --default-color:#6cb1ff;
   //--default-color:#333;
@@ -159,6 +155,7 @@ export default class ContextMenu extends Vue {
   .title{border-bottom:1px solid #eee; margin:.5rem;}
   .menus{ position:absolute; top:0; left:0; background:#fff; border:1px solid var(--default-color); min-width:200px; padding-top:5px; padding-bottom:5px;
     border-radius:5px; box-shadow:3px 3px 3px rgba(0, 0, 0, .2); user-select:none;
+    > ul{padding:0;margin:0;}
     .item{padding:.5rem; transition:all .3s; cursor:pointer; color:var(--default-color);
       &:before{background-color:var(--default-color); opacity:.1;}
       &.danger{color:var(--danger-color);
