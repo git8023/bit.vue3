@@ -9,6 +9,12 @@
  */
 
 {
+    "context-menu": {
+        "scope": "git8023.vue3",
+        "version": "0.0.2",
+        "mainFile": "ContextMenu.vue",
+        "rootDir": "src/components/context-menu"
+    },
     "decorators": {
         "scope": "git8023.vue3",
         "version": "0.0.1",
@@ -35,7 +41,7 @@
     },
     "type-define": {
         "scope": "git8023.toolkit",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "src/_bit/type-define"
     },
