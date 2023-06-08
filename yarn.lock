@@ -6911,6 +6911,11 @@ vue@^3.2.13:
     "@vue/server-renderer" "3.3.4"
     "@vue/shared" "3.3.4"
 
+vuex-class@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.npmmirror.com/vuex-class/-/vuex-class-0.3.2.tgz#c7e96a076c1682137d4d23a8dcfdc63f220e17a8"
+  integrity sha512-m0w7/FMsNcwJgunJeM+wcNaHzK2KX1K1rw2WUQf7Q16ndXHo7pflRyOV/E8795JO/7fstyjH3EgqBI4h4n4qXQ==
+
 vuex@^4.0.0:
   version "4.1.0"
   resolved "https://registry.npmmirror.com/vuex/-/vuex-4.1.0.tgz#aa1b3ea5c7385812b074c86faeeec2217872e36c"

@@ -11,7 +11,7 @@
 {
     "all-export": {
         "scope": "git8023.toolkit",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "src/@bit/toolkit/all-export"
     },
@@ -21,11 +21,23 @@
         "mainFile": "ContextMenu.vue",
         "rootDir": "src/@bit/context-menu"
     },
+    "decorator": {
+        "scope": "git8023.toolkit",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "src/@bit/toolkit/decorator"
+    },
     "page": {
         "scope": "git8023.vue3",
         "version": "0.0.4",
         "mainFile": "TablePage.vue",
         "rootDir": "src/components/page"
+    },
+    "store-tools": {
+        "scope": "git8023.vue3",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "src/tools/store-tools"
     },
     "$schema-version": "15.0.0"
 }

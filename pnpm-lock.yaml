@@ -124,6 +124,9 @@ importers:
       vuex:
         specifier: ^4.0.0
         version: registry.npmjs.org/vuex@4.1.0(vue@3.3.4)
+      vuex-class:
+        specifier: ^0.3.2
+        version: registry.npmjs.org/vuex-class@0.3.2(vue-class-component@8.0.0-rc.1)(vue@3.3.4)(vuex@4.1.0)
     devDependencies:
       '@babel/runtime':
         specifier: 7.20.0
@@ -145,6 +148,10 @@ importers:
         version: 0.0.2
 
   src/@bit/toolkit/all-export: {}
+
+  src/@bit/toolkit/decorator: {}
+
+  src/components/page: {}
 
 packages:
 
@@ -10969,6 +10976,28 @@ packages:
       '@vue/runtime-dom': registry.npmjs.org/@vue/runtime-dom@3.3.4
       '@vue/server-renderer': registry.npmjs.org/@vue/server-renderer@3.3.4(vue@3.3.4)
       '@vue/shared': registry.npmjs.org/@vue/shared@3.3.4
+    dev: false
+
+  registry.npmjs.org/vuex-class@0.3.2(vue-class-component@8.0.0-rc.1)(vue@3.3.4)(vuex@4.1.0):
+    resolution: {integrity: sha512-m0w7/FMsNcwJgunJeM+wcNaHzK2KX1K1rw2WUQf7Q16ndXHo7pflRyOV/E8795JO/7fstyjH3EgqBI4h4n4qXQ==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/vuex-class/-/vuex-class-0.3.2.tgz}
+    id: registry.npmjs.org/vuex-class/0.3.2
+    name: vuex-class
+    version: 0.3.2
+    peerDependencies:
+      vue: '*'
+      vue-class-component: '*'
+      vuex: '*'
+    peerDependenciesMeta:
+      vue:
+        optional: true
+      vue-class-component:
+        optional: true
+      vuex:
+        optional: true
+    dependencies:
+      vue: registry.npmjs.org/vue@3.3.4
+      vue-class-component: registry.npmjs.org/vue-class-component@8.0.0-rc.1(vue@3.3.4)
+      vuex: registry.npmjs.org/vuex@4.1.0(vue@3.3.4)
     dev: false
 
   registry.npmjs.org/vuex@4.1.0(vue@3.3.4):
