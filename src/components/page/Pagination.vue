@@ -45,5 +45,5 @@ export default class Pagination extends Vue {
 </script>
 
 <style scoped lang="scss">
-
+.padding-1rem{padding:1rem;}
 </style>

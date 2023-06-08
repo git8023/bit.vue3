@@ -23,7 +23,7 @@
     },
     "page": {
         "scope": "git8023.vue3",
-        "version": "0.0.1",
+        "version": "0.0.4",
         "mainFile": "TablePage.vue",
         "rootDir": "src/components/page"
     },

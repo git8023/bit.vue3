@@ -13,7 +13,7 @@
                 :row-class-name="rowClassName" @expand-change="onExpandChangeInner"
                 :highlight-current-row="highlightCurrentRow" @current-change="currentChange"
                 @row-contextmenu="rowContextMenuHandler">
-        <el-table-column type="index" width="50" label="#"/>
+        <el-table-column v-if="indexedFirst" type="index" width="50" label="#"/>
         <slot/>
       </el-table>
     </div>
@@ -35,10 +35,8 @@ import Pagination from './Pagination.vue';
 import { TableInstance } from 'element-plus';
 import { Options, Vue } from 'vue-class-component';
 import { Prop, Watch } from 'vue-property-decorator';
-
 import ContextMenu from '@git8023/vue3.context-menu/ContextMenu.vue';
 import { Cast, Functions, types, fns, IContextMenus } from './table-page.import';
-
 import { TableRowSelected } from './types';
 
 export type SelectEvent = { rows: any[], row: any, tableRef: TableInstance };
@@ -55,7 +53,7 @@ export default class TablePage<T> extends Vue {
   @Prop({ default: true }) highlightCurrentRow!: boolean;
   @Prop() contextMenus!: IContextMenus;
   @Prop() rowClassName!: string | ((row: any, rowIndex: any) => string);
-
+  @Prop({ default: true }) indexedFirst!: boolean;
   @Prop() currentChange!: (currentRow: any, oldCurrentRow: any) => void;
   @Prop() search!: fns.Caller;
   @Prop() expandChangeEvent!: (row: any, expandedRows: any[]) => void;
@@ -142,4 +140,6 @@ export default class TablePage<T> extends Vue {
 
 <style lang="scss" scoped>
 .table-page-header{transform:translateY(1px);}
+.height__zero{height:0;}
+.z-index__10{z-index:10;}
 </style>
