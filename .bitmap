@@ -9,53 +9,17 @@
  */
 
 {
-    "_style": {
+    "all-export": {
         "scope": "git8023.toolkit",
         "version": "0.0.1",
-        "mainFile": "index.scss",
-        "rootDir": "src/_bit/_style"
+        "mainFile": "index.ts",
+        "rootDir": "src/@bit/toolkit/all-export"
     },
     "context-menu": {
         "scope": "git8023.vue3",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "mainFile": "ContextMenu.vue",
-        "rootDir": "src/components/context-menu"
-    },
-    "decorators": {
-        "scope": "git8023.vue3",
-        "version": "0.0.1",
-        "mainFile": "index.ts",
-        "rootDir": "src/plugin/decorators"
-    },
-    "funcs": {
-        "scope": "git8023.toolkit",
-        "version": "0.0.2",
-        "mainFile": "Functions.ts",
-        "rootDir": "src/_bit/funcs"
-    },
-    "json": {
-        "scope": "git8023.toolkit",
-        "version": "0.0.8",
-        "mainFile": "index.ts",
-        "rootDir": "src/_bit/json"
-    },
-    "string": {
-        "scope": "git8023.toolkit",
-        "version": "0.0.1",
-        "mainFile": "index.ts",
-        "rootDir": "src/_bit/string"
-    },
-    "type-define": {
-        "scope": "git8023.toolkit",
-        "version": "0.0.3",
-        "mainFile": "index.ts",
-        "rootDir": "src/_bit/type-define"
-    },
-    "validation": {
-        "scope": "git8023.toolkit",
-        "version": "0.0.2",
-        "mainFile": "Validation.ts",
-        "rootDir": "src/_bit/validation"
+        "rootDir": "src/@bit/context-menu"
     },
     "$schema-version": "15.0.0"
 }

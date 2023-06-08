@@ -38,21 +38,7 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {
-        "@babel/runtime": "7.22.3",
-        "@git8023/toolkit.array": "0.0.10",
-        "@git8023/toolkit.build": "0.0.6",
-        "@git8023/toolkit.err": "0.0.2",
-        "@git8023/toolkit.funcs": "0.0.3",
-        "@git8023/toolkit.json": "0.0.10",
-        "@git8023/toolkit.promise": "0.0.2",
-        "@git8023/toolkit.string": "0.0.3",
-        "@git8023/toolkit.validation": "0.0.3",
-        "@types/jest": "29.5.2",
-        "@types/node": "20.2.5",
-        "vue": "^3.3.4",
-        "vue-property-decorator": "^9.1.2"
-      },
+      "dependencies": {},
       "peerDependencies": {}
     },
     "linkCoreAspects": true

@@ -1,3 +1,8 @@
+# 右键菜单组件
+组件通过监听鼠标事件变化来显示菜单项, 可搭配表格等其他组件使用
+
+# Example
+```vue
 <template>
   <div>
 
@@ -10,10 +15,9 @@
 </template>
 
 <script lang="ts">
-
 import { Options, Vue } from 'vue-class-component';
-import ContextMenu from './ContextMenu.vue';
-import { IContextMenu, IContextMenus } from './types';
+import ContextMenu from '@/components/@bit/context-menu/ContextMenu.vue';
+import { IContextMenu, IContextMenus } from '@git8023/vue3.context-menu/types';
 
 @Options({
   components: { ContextMenu },
@@ -58,3 +62,4 @@ export default class Main extends Vue {
   }
 }
 </script>
+```

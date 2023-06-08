@@ -12,8 +12,8 @@
 <script lang="ts">
 
 import { Options, Vue } from 'vue-class-component';
-import ContextMenu from './ContextMenu.vue';
-import { IContextMenu, IContextMenus } from './types';
+import ContextMenu from '@/components/@bit/context-menu/ContextMenu.vue';
+import { IContextMenu, IContextMenus } from '@git8023/vue3.context-menu/types';
 
 @Options({
   components: { ContextMenu },
