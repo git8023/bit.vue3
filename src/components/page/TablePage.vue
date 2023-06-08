@@ -32,17 +32,14 @@
 
 <script lang="ts">
 import Pagination from './Pagination.vue';
-import { types, fns } from '@git8023/toolkit.type-define';
-
-// import { Cast, fns, Functions } from '@hyong8023/tool-box';
-import { Cast } from '@git8023/toolkit.cast';
-import { Functions } from '@git8023/toolkit.funcs';
-
 import { TableInstance } from 'element-plus';
 import { Options, Vue } from 'vue-class-component';
 import { Prop, Watch } from 'vue-property-decorator';
-import { vms } from '@/type/vms';
-import ContextMenu from '@/components/context-menu/ContextMenu.vue';
+
+import ContextMenu from '@git8023/vue3.context-menu/ContextMenu.vue';
+import { Cast, Functions, types, fns, IContextMenus } from './table-page.import';
+
+import { TableRowSelected } from './types';
 
 export type SelectEvent = { rows: any[], row: any, tableRef: TableInstance };
 
@@ -51,12 +48,12 @@ export type SelectEvent = { rows: any[], row: any, tableRef: TableInstance };
   emits: ['update:selection', 'row-contextmenu'],
 })
 export default class TablePage<T> extends Vue {
-  @Prop({ required: true }) page!: Pick<types.Page<T>, 'list'>;
+  @Prop({ required: true }) page!: types.Page<T>;
   @Prop({ default: false }) showPager!: boolean;
   @Prop({ default: true }) fixedTableHeight!: boolean;
   @Prop() selection!: any[];
   @Prop({ default: true }) highlightCurrentRow!: boolean;
-  @Prop() contextMenus!: vms.ContextMenus;
+  @Prop() contextMenus!: IContextMenus;
   @Prop() rowClassName!: string | ((row: any, rowIndex: any) => string);
 
   @Prop() currentChange!: (currentRow: any, oldCurrentRow: any) => void;
@@ -128,7 +125,7 @@ export default class TablePage<T> extends Vue {
       rows: selection,
       row,
       tableRef: this.tableRef,
-    } as vms.TableRowSelected);
+    } as TableRowSelected);
   }
 
   // 数据行右键菜单事件

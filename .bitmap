@@ -21,5 +21,11 @@
         "mainFile": "ContextMenu.vue",
         "rootDir": "src/@bit/context-menu"
     },
+    "page": {
+        "scope": "git8023.vue3",
+        "version": "0.0.1",
+        "mainFile": "TablePage.vue",
+        "rootDir": "src/components/page"
+    },
     "$schema-version": "15.0.0"
 }

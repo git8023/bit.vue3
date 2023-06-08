@@ -1,11 +1,9 @@
 <template>
   <div class="box dc-text-center padding-1rem">
     <div class="dc-inline-block">
-      <el-pagination
-        :total="page.total" :page-size="page.size" :page-sizes="[10,20,50,100]"
-        :current-page="page.current" background :layout="layout"
-        @size-change="onSizeChange" @current-change="onCurrentChange"
-      />
+      <el-pagination :total="page.total" :page-size="page.size" :page-sizes="[10,20,50,100]"
+                     :current-page="page.current" background :layout="layout"
+                     @size-change="onSizeChange" @current-change="onCurrentChange"/>
     </div>
   </div>
 </template>
@@ -13,8 +11,7 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import { Prop } from 'vue-property-decorator';
-import { Functions } from '@git8023/toolkit.funcs';
-import { types, fns } from '@git8023/toolkit.type-define';
+import { Functions, types, fns } from './pagination.import';
 
 type LayoutItem = 'total' | 'sizes' | 'prev' | 'pager' | 'next' | 'jumper'
 
