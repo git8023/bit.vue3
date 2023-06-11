@@ -11,9 +11,15 @@
 {
     "all-export": {
         "scope": "git8023.toolkit",
-        "version": "0.0.2",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "src/@bit/toolkit/all-export"
+    },
+    "axios-config": {
+        "scope": "git8023.vue3",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "src/net/axios-config"
     },
     "context-menu": {
         "scope": "git8023.vue3",
