@@ -106,6 +106,9 @@ importers:
       eslint-plugin-vuejs-accessibility:
         specifier: ^1.1.0
         version: registry.npmjs.org/eslint-plugin-vuejs-accessibility@1.2.0(eslint@7.32.0)
+      pdfjs-dist:
+        specifier: 2.16.105
+        version: registry.npmjs.org/pdfjs-dist@2.16.105
       qs:
         specifier: 6.11.2
         version: registry.npmjs.org/qs@6.11.2
@@ -154,6 +157,8 @@ importers:
   src/@bit/toolkit/decorator: {}
 
   src/components/page: {}
+
+  src/components/pdf-render: {}
 
   src/net/axios-config: {}
 
@@ -5654,6 +5659,13 @@ packages:
       domelementtype: registry.npmjs.org/domelementtype@2.3.0
     dev: false
 
+  registry.npmjs.org/dommatrix@1.0.3:
+    resolution: {integrity: sha512-l32Xp/TLgWb8ReqbVJAFIvXmY7go4nTxxlWiAFyhoQw9RKEOHBZNnyGvJWqDVSPmq3Y9HlM4npqF/T6VMOXhww==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/dommatrix/-/dommatrix-1.0.3.tgz}
+    name: dommatrix
+    version: 1.0.3
+    deprecated: dommatrix is no longer maintained. Please use @thednp/dommatrix.
+    dev: false
+
   registry.npmjs.org/domutils@2.8.0:
     resolution: {integrity: sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/domutils/-/domutils-2.8.0.tgz}
     name: domutils
@@ -8688,6 +8700,20 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+  registry.npmjs.org/pdfjs-dist@2.16.105:
+    resolution: {integrity: sha512-J4dn41spsAwUxCpEoVf6GVoz908IAA3mYiLmNxg8J9kfRXc2jxpbUepcP0ocp0alVNLFthTAM8DZ1RaHh8sU0A==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-2.16.105.tgz}
+    name: pdfjs-dist
+    version: 2.16.105
+    peerDependencies:
+      worker-loader: '*'
+    peerDependenciesMeta:
+      worker-loader:
+        optional: true
+    dependencies:
+      dommatrix: registry.npmjs.org/dommatrix@1.0.3
+      web-streams-polyfill: registry.npmjs.org/web-streams-polyfill@3.2.1
+    dev: false
+
   registry.npmjs.org/picocolors@0.2.1:
     resolution: {integrity: sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/picocolors/-/picocolors-0.2.1.tgz}
     name: picocolors
@@ -11080,6 +11106,13 @@ packages:
     version: 1.0.1
     dependencies:
       defaults: registry.npmjs.org/defaults@1.0.4
+    dev: false
+
+  registry.npmjs.org/web-streams-polyfill@3.2.1:
+    resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==, registry: https://node.bit.cloud/, tarball: https://registry.npmjs.org/web-streams-polyfill/-/web-streams-polyfill-3.2.1.tgz}
+    name: web-streams-polyfill
+    version: 3.2.1
+    engines: {node: '>= 8'}
     dev: false
 
   registry.npmjs.org/webidl-conversions@3.0.1:

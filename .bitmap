@@ -39,6 +39,12 @@
         "mainFile": "TablePage.vue",
         "rootDir": "src/components/page"
     },
+    "pdf-render": {
+        "scope": "git8023.vue3",
+        "version": "0.0.1",
+        "mainFile": "PdfSinglePageRender.vue",
+        "rootDir": "src/components/pdf-render"
+    },
     "store-tools": {
         "scope": "git8023.vue3",
         "version": "0.0.1",

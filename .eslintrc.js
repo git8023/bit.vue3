@@ -87,5 +87,6 @@ module.exports = {
     '@typescript-eslint/no-inferrable-types': 'off',
     '@typescript-eslint/no-this-alias': 'off',
     'vue/no-side-effects-in-computed-properties': 'off',
+    'object-shorthand': 'off',
   },
 };
